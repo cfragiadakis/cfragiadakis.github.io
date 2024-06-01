@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "My Portfolio"
+title                    : 
 title_separator          : "-"
 name                     : &name "Christoforos Fragkiadakis"
 description              : &description "personal description"

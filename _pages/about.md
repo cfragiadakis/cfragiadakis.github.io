@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-🎓 I have graduated from [https://www.dept.aueb.gr/] of Athens University of Economics and Business
+🎓 I have graduated from [DMST](https://www.dept.aueb.gr/) of Athens University of Economics and Business, with major in Software Engineering and Data Science
 
 A data-driven personal website
 ======
