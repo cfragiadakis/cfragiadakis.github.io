@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Data Scientist"
   location         : "Athens, Greece"
-  employer         : "Red Brick University"
+  #employer         : "Red Brick University"
   uri              : # URL
   email            : "cfragiadakis@hotmail.gr" 
 
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "Christoforos Fragiadakis"
+  linkedin         : christoforos-fragiadakis
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
