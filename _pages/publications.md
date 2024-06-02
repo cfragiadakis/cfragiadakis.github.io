@@ -1,16 +1,8 @@
 ---
 layout: archive
-title: "Publications"
+title: "Projects"
 permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+Analysis of Roget's Thesaurus lexicon, using web scraping and machine learning techniques <br/><img src='/images/lexicon.jpg'>
