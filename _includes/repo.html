@@ -1,13 +1,21 @@
-<div class="repository">
-  <h3>
-    <a href="{{ repository.html_url }}">{{ repository.name }}</a>
-    <span class="label">Public</span>
-  </h3>
-  <p>{{ repository.description }}</p>
-  {% if repository.language %}
-    <p><img align="center" src="https://img.shields.io/badge/{{ repository.language | replace: " ", "%20" }}-orange" alt="{{ repository.language }}" /></p>
-  {% endif %}
-  {% if repository.stargazers_count > 0 %}
-    <p><img align="center" src="https://img.shields.io/github/stars/{{ repository.full_name }}" alt="Stars" /> {{ repository.stargazers_count }} stars</p>
-  {% endif %}
+{% assign repo_url = include.repository | split: '/' %}
+{% if site.data.repositories.github_users contains repo_url.first %}
+  {% assign show_owner = false %}
+{% else %}
+  {% assign show_owner = true %}
+{% endif %}
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/{{ include.repository }}">
+    <img
+      class="repo-img-light w-100"
+      alt="{{ include.repository }}"
+      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme=dracula&show_owner={{ show_owner }}"
+    >
+    <img
+      class="repo-img-dark w-100"
+      alt="{{ include.repository }}"
+      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme=dark&show_owner={{ show_owner }}"
+    >
+  </a>
 </div>
