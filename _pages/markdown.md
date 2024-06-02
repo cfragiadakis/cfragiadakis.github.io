@@ -15,31 +15,11 @@ redirect_from:
 
 ## Repositories
 
-<div class="repository">
-  <h3><a href="https://github.com/cfragiadakis/Roget-Thesaurus-Classification">Roget-Thesaurus-Classification</a> <span class="label">Public</span></h3>
-  <p>Analysis of Roget's Thesaurus lexicon, using web scraping and machine learning techniques</p>
-  <p><img align="center" src="https://img.shields.io/badge/Jupyter%20Notebook-orange" alt="Jupyter Notebook" /></p>
-  <p><img align="center" src="https://img.shields.io/github/stars/cfragiadakis/Roget-Thesaurus-Classification" alt="Stars" /> 2 stars</p>
-</div>
-
-<div class="repository">
-  <h3><a href="https://github.com/cfragiadakis/Exploring-AirBnB-in-Athens">Exploring-AirBnB-in-Athens</a> <span class="label">Public</span></h3>
-  <p>Exploratory Data Analysis in AirBnB Athens data</p>
-  <p><img align="center" src="https://img.shields.io/badge/HTML-orange" alt="HTML" /></p>
-  <p><img align="center" src="https://img.shields.io/github/stars/cfragiadakis/Exploring-AirBnB-in-Athens" alt="Stars" /> 1 star</p>
-</div>
-
-<div class="repository">
-  <h3><a href="https://github.com/cfragiadakis/Exploring-Why-Civil-Resistance-Works">Exploring-Why-Civil-Resistance-Works</a> <span class="label">Public</span></h3>
-  <p>Statistical analysis that involves the impact of various factors on success rates of a campaign</p>
-  <p><img align="center" src="https://img.shields.io/badge/Jupyter%20Notebook-orange" alt="Jupyter Notebook" /></p>
-</div>
-
-<div class="repository">
-  <h3><a href="https://github.com/cfragiadakis/Crime-Analysis-in-Chicago">Crime-Analysis-in-Chicago</a> <span class="label">Public</span></h3>
-  <p>Exploratory Data Analysis in Chicago crimes data (2019-2022)</p>
-  <p><img align="center" src="https://img.shields.io/badge/Jupyter%20Notebook-orange" alt="Jupyter Notebook" /></p>
-</div>
+{% if site.data.repositories.github_repositories %}
+  {% for repo in site.data.repositories.github_repositories %}
+    {% include repository/repo.html repository=repo %}
+  {% endfor %}
+{% endif %}
 
 
 ## Locations of key files/directories
