@@ -1,22 +1,28 @@
-<div class="container">
-  <div class="row">
-    {% for repository in site.data.repositories %}
-      {% assign repo_url = repository | split: '/' %}
-      {% if site.data.repositories.github_users contains repo_url.first %}
-        {% assign show_owner = false %}
-      {% else %}
-        {% assign show_owner = true %}
-      {% endif %}
+{% assign repo_url = include.repository | split: '/' %}
+{% if site.data.repositories.github_users contains repo_url.first %}
+  {% assign show_owner = false %}
+{% else %}
+  {% assign show_owner = true %}
+{% endif %}
 
-      <div class="col-12 col-md-6 p-2 d-flex justify-content-center align-items-center">
-        <a href="https://github.com/{{ repository }}">
-          <img
-            class="repo-img-light"
-            alt="{{ repository }}"
-            src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme=default&show_owner={{ show_owner }}"
-          >
-        </a>
-      </div>
-    {% endfor %}
-  </div>
+<div class="repos-container d-flex flex-wrap justify-content-center">
+  {% for repository in site.data.repositories %}
+    {% assign repo_url = repository | split: '/' %}
+    {% if site.data.repositories.github_users contains repo_url.first %}
+      {% assign show_owner = false %}
+    {% else %}
+      {% assign show_owner = true %}
+    {% endif %}
+    <div class="repo p-2 d-flex justify-content-center align-items-center" style="width: 50%;">
+      <a href="https://github.com/{{ repository }}">
+        <img
+          class="repo-img-light"
+          alt="{{ repository }}"
+          src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme=default&show_owner={{ show_owner }}"
+        >
+      </a>
+    </div>
+  {% endfor %}
 </div>
+
+
