@@ -11,6 +11,7 @@ author_profile: true
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 10px;
   }
 
   .project-item {
@@ -57,7 +58,7 @@ author_profile: true
 <div class="project-row">
   <div class="project-item">
 
-  Analysis of Roget's Thesaurus lexicon, using web scraping and machine learning techniques <br/>
+  Analysis of Roget's Thesaurus lexicon, using web scraping, word embeddings and machine learning techniques <br/>
   <a href = 'https://github.com/cfragiadakis/Roget-Thesaurus-Classification'>
       <img src="/images/lexicon.jpg">
   </a>
