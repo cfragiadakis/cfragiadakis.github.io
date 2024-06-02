@@ -15,11 +15,42 @@ redirect_from:
 
 ## Repositories
 
-{% if site.data.repositories.github_repositories %}
+## Repositories
+
+<div id="repositories"></div>
+
+<script>
+  const repos = {{ site.data.repositories.github_repositories | jsonify }};
+  const repoContainer = document.getElementById('repositories');
+
+  repos.forEach(repo => {
+    const apiUrl = `https://api.github.com/repos/${repo.owner}/${repo.name}`;
+    
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const repoElement = document.createElement('div');
+        repoElement.classList.add('repository');
+        repoElement.innerHTML = `
+          <h3><a href="${data.html_url}">${data.name}</a> <span class="label">Public</span></h3>
+          <p>${data.description}</p>
+          <p><img align="center" src="https://img.shields.io/badge/${data.language || 'Unknown'}-orange" alt="${data.language || 'Unknown'}" /></p>
+          ${data.stargazers_count > 0 ? `<p><img align="center" src="https://img.shields.io/github/stars/${repo.owner}/${repo.name}" alt="Stars" /> ${data.stargazers_count} stars</p>` : ''}
+        `;
+        repoContainer.appendChild(repoElement);
+      })
+      .catch(error => {
+        console.error('Error fetching repository data:', error);
+      });
+  });
+</script>
+
+
+<!-- {% if site.data.repositories.github_repositories %}
   {% for repo in site.data.repositories.github_repositories %}
     {% include repository/repo.html repository=repo %}
   {% endfor %}
-{% endif %}
+{% endif %} -->
 
 
 ## Locations of key files/directories
