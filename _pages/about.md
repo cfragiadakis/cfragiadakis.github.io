@@ -12,7 +12,7 @@ redirect_from:
 A data-driven personal website
 ====== -->
 
-I'm a Data Scientist, currently working at Grant Thornton Greece, focusing on projects that have involved exploratory data analysis, natural language processing, machine learning models and the application of large language models. 
+I'm a Data Scientist, currently working at Grant Thornton Greece, focusing on projects that have involved Exploratory Data Analysis, Natural Language Processing, Machine Learning models and the application of Large Language Models. 
 
 I have completed my Bachelor's degree in the Department of Management Science & Technology at [AUEB](https://www.aueb.gr/), with major in Software Engineering and Data Science. My thesis explored the Advancements in Natural Language Processing. 
 
@@ -22,6 +22,6 @@ I continuously seek to expand my knowledge, currently learning Keras & Tensorflo
 
 
 
-<div align="center" style="position: absolute; bottom: 0; width: 100%; font-size: 10px;">
+<div align="center" style="font-size: small;">
   For further information, feel free to contact me via [email](mailto:cfragiadakis@hotmail.gr)
 </div>
