@@ -13,10 +13,10 @@ main:
     url: /portfolio/
         
   - title: "Github"
-    url: /year-archive/
+    url: /markdown/
     
   - title: "CV"
     url: /files/Christoforos_Fragkiadakis.pdf
     
   # - title: "Guide"
-  #   url: /markdown/
+  #   url: /year-archive/

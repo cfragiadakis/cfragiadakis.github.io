@@ -7,6 +7,12 @@ redirect_from:
   - /markdown.html
 ---
 
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=cfragiadakis&" alt="cfragiadakis" /></p>
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=cfragiadakis&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
+
 ## Locations of key files/directories
 
 * Basic config options: _config.yml
