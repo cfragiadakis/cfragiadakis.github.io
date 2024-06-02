@@ -5,9 +5,29 @@ permalink: /publications/
 author_profile: true
 ---
 
+<style>
+  .project-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .project-item {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .project-item {
+      width: 100%;
+    }
+  }
+</style>
+
+
 <h2>Machine Learning</h2>
 
-Analysis of Roget's Thesaurus lexicon, using web scraping and machine learning techniques <br/><img src='/images/lexicon.png'>
+Analysis of Roget's Thesaurus lexicon, using web scraping and machine learning techniques <br/><img src='/images/lexicon.jpg'>
 
 <h2>Statistics</h2>
 
