@@ -9,31 +9,28 @@
   .repo-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .repo {
-    width: calc(50% - 10px); /* Adjusted width to ensure space between items */
+    width: calc(50% - 10px); 
     margin-bottom: 20px;
     box-sizing: border-box;
   }
   @media (max-width: 768px) {
     .repo {
-      width: 100%; /* Full width for small screens */
+      width: 100%; /*for small screens */
     }
   }
 </style>
 
 <div class="repo-container">
-  {% for repository in site.data.repositories.list %}
-    {% assign repo_url = repository | split: '/' %}
-    <div class="repo p-2 text-center">
-      <a href="https://github.com/{{ repository }}">
-        <img
-          class="repo-img-light"
-          alt="{{ repository }}"
-          src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme=default&show_owner={{ show_owner }}"
-        >
-      </a>
-    </div>
-  {% endfor %}
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/{{ include.repository }}">
+      <img
+        class="repo-img-light"
+        alt="{{ include.repository }}"
+        src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme=default&show_owner={{ show_owner }}"
+      >
+    </a>
+  </div>
 </div>
