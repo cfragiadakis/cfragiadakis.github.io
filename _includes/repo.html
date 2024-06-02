@@ -6,85 +6,41 @@
 {% endif %}
 
 <div class="repo p-2 my-2">
-  <div class="repo-card">
-    <a href="https://github.com/{{ include.repository }}" class="repo-link">
-      <div class="repo-header">
-        <h3 class="repo-name">{{ repo_url[1] }}</h3>
-        <span class="repo-status">{{ show_owner ? 'Public' : '' }}</span>
+  <a href="https://github.com/{{ include.repository }}" class="d-block text-decoration-none text-dark">
+    <div class="d-flex justify-content-between align-items-center border p-2 rounded">
+      <div>
+        <h5 class="mb-1">{{ repo_url[1] }}</h5>
+        <p class="mb-1">{{ include.description }}</p>
+        <span class="badge bg-success">{{ include.language }}</span>
       </div>
-      <p class="repo-description">
-        {{ include.description }}
-      </p>
-      <div class="repo-details">
-        <span class="repo-lang">
-          <img src="https://img.shields.io/badge/language-{{ include.language }}-green" alt="{{ include.language }}">
-        </span>
-        <span class="repo-stars">
+      <div class="text-end">
+        <p class="mb-1">
           <img src="https://img.shields.io/github/stars/{{ repo_url[0] }}/{{ repo_url[1] }}?style=social" alt="GitHub stars">
-        </span>
-        <span class="repo-updated">
-          <img src="https://img.shields.io/github/last-commit/{{ repo_url[0] }}/{{ repo_url[1] }}" alt="Last updated">
-        </span>
+        </p>
+        <p class="mb-0">
+          <img src="https://img.shields.io/github/last-commit/{{ repo_url[0] }}/{{ repo_url[1] }}" alt="Last commit">
+        </p>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div>
 
 <style>
-.repo-card {
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(27,31,35,0.12);
-  padding: 16px;
-  transition: box-shadow 0.2s;
-}
-
-.repo-card:hover {
-  box-shadow: 0 4px 12px rgba(27,31,35,0.15);
-}
-
-.repo-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.repo-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.repo-name {
-  font-size: 16px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.repo-status {
-  background-color: #28a745;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-size: 12px;
-}
-
-.repo-description {
-  font-size: 14px;
-  color: #586069;
-  margin-bottom: 8px;
-}
-
-.repo-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 12px;
-  color: #586069;
-}
-
-.repo-details img {
-  margin-right: 5px;
-}
+  .repo h5 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  .repo p {
+    margin: 0.5rem 0;
+  }
+  .badge {
+    padding: 0.5em 0.75em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 0.25rem;
+  }
+  .bg-success {
+    background-color: #28a745;
+  }
 </style>
