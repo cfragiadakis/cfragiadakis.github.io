@@ -20,4 +20,3 @@ redirect_from:
     {% include repo.html repository=repo %}
   {% endfor %}
 {% endif %}
-

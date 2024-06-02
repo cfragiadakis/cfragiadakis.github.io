@@ -21,3 +21,7 @@ Also, I am a research assistant at the University of Sheffield, analyzing hundre
 I continuously seek to expand my knowledge, currently learning Keras & Tensorflow.
 
 
+
+<div align="center" style="font-size: small;">
+  For further information, feel free to contact me via email
+</div>
