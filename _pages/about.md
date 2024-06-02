@@ -22,6 +22,6 @@ I continuously seek to expand my knowledge, currently learning Keras & Tensorflo
 
 
 
-<div align="center" style="font-size: small;">
-  For further information, feel free to contact me via email
+<div align="center" style="position: absolute; bottom: 0; width: 100%; font-size: 10px;">
+  For further information, feel free to contact me via [email](mailto:cfragiadakis@hotmail.gr)
 </div>
