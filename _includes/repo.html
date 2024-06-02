@@ -6,43 +6,26 @@
 {% endif %}
 
 <style>
-  .repositories {
+  .repo-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .row {
-    display: flex;
-    width: 100%;
-  }
-
   .repo {
-    width: 50%;
-    padding: 10px;
+    width: 45%;
+    margin: 2.5%;
     box-sizing: border-box;
   }
 </style>
 
-<div class="repositories">
-  {% for repository in site.data.repositories %}
-    {% if forloop.index0 % 2 == 0 %}
-      <div class="row">
-    {% endif %}
-    <div class="repo p-2 text-center">
-      <a href="https://github.com/{{ repository }}">
-        <img
-          class="repo-img-light"
-          alt="{{ repository }}"
-          src="https://github-readme-stats.vercel.app/api/pin/?username={{ repository | split: '/' | first }}&repo={{ repository | split: '/' | last }}&theme=default&show_owner={{ show_owner }}"
-        >
-      </a>
-    </div>
-    {% if forloop.index0 % 2 == 1 %}
-      </div>
-    {% endif %}
-  {% endfor %}
-  {% if forloop.index0 % 2 == 0 %}
-    </div>
-  {% endif %}
+<div class="repo-container">
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/{{ include.repository }}">
+      <img
+        class="repo-img-light"
+        alt="{{ include.repository }}"
+        src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme=default&show_owner={{ show_owner }}"
+      >
+    </a>
+  </div>
 </div>
