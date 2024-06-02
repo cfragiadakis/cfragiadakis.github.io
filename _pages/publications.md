@@ -72,7 +72,7 @@ author_profile: true
   <div class="project-item">
   Statistical analysis on the impact of various factors on success rates of a campaign 
   <a href = 'https://github.com/cfragiadakis/Exploring-Why-Civil-Resistance-Works'>
-    <br/><img src="/images/lr_regression.JPG">
+    <br/><img src="/images/logistic_regression.JPG">
   </a>
   </div>
   <div class="project-item">
