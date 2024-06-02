@@ -16,7 +16,7 @@ redirect_from:
 ## Repositories
 
 
-<div id="repositories"></div>
+<!-- <div id="repositories"></div>
 
 <script>
   const repos = {{ site.data.repositories.github_repositories | jsonify }};
@@ -42,15 +42,13 @@ redirect_from:
         console.error('Error fetching repository data:', error);
       });
   });
-</script>
+</script> -->
 
-
-<!-- {% if site.data.repositories.github_repositories %}
+{% if site.data.repositories.github_repositories %}
   {% for repo in site.data.repositories.github_repositories %}
-    {% include repository/repo.html repository=repo %}
+    {% include repo.html repository=repo %}
   {% endfor %}
-{% endif %} -->
-
+{% endif %}
 
 ## Locations of key files/directories
 
