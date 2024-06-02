@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Christoforos Fragkiadakis"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -19,9 +19,3 @@ I have completed my Bachelor's degree in the Department of Management Science & 
 Also, I am a research assistant at the University of Sheffield, analyzing hundreds of documents from Greek and foreign press on Greek tourism, using topic modeling techniques to derive insights.
 
 I continuously seek to expand my knowledge, currently learning Keras & Tensorflow.
-
-
-
-<div align="center" style="font-size: small;">
-  For further information, feel free to contact me via [email](mailto:cfragiadakis@hotmail.gr)
-</div>
