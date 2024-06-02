@@ -21,7 +21,7 @@ author_profile: true
 
   .project-item img {
     width: 420px; 
-    height: 200px; 
+    height: 210px; 
     object-fit: cover; 
   }
 
