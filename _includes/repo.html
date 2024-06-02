@@ -5,42 +5,17 @@
   {% assign show_owner = true %}
 {% endif %}
 
-<div class="repo p-2 my-2">
-  <a href="https://github.com/{{ include.repository }}" class="d-block text-decoration-none text-dark">
-    <div class="d-flex justify-content-between align-items-center border p-2 rounded">
-      <div>
-        <h5 class="mb-1">{{ repo_url[1] }}</h5>
-        <p class="mb-1">{{ include.description }}</p>
-        <span class="badge bg-success">{{ include.language }}</span>
-      </div>
-      <div class="text-end">
-        <p class="mb-1">
-          <img src="https://img.shields.io/github/stars/{{ repo_url[0] }}/{{ repo_url[1] }}?style=social" alt="GitHub stars">
-        </p>
-        <p class="mb-0">
-          <img src="https://img.shields.io/github/last-commit/{{ repo_url[0] }}/{{ repo_url[1] }}" alt="Last commit">
-        </p>
-      </div>
-    </div>
+<div class="repo p-2 text-center">
+  <a href="https://github.com/{{ include.repository }}">
+    <img
+      class="repo-img-light w-100"
+      alt="{{ include.repository }}"
+      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme=dracula&show_owner={{ show_owner }}"
+    >
+    <!-- <img
+      class="repo-img-dark w-100"
+      alt="{{ include.repository }}"
+      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme=dark&show_owner={{ show_owner }}"
+    > -->
   </a>
 </div>
-
-<style>
-  .repo h5 {
-    font-size: 1.25rem;
-    margin: 0;
-  }
-  .repo p {
-    margin: 0.5rem 0;
-  }
-  .badge {
-    padding: 0.5em 0.75em;
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: #fff;
-    border-radius: 0.25rem;
-  }
-  .bg-success {
-    background-color: #28a745;
-  }
-</style>
