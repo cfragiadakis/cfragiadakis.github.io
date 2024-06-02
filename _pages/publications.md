@@ -86,7 +86,7 @@ author_profile: true
   <div class="project-item">
     Analysis of Athens AirBnB data 
     <a href = 'https://github.com/cfragiadakis/Exploring-AirBnB-in-Athens'>
-    <br/><img src="/images/airbnb.jpg">
+    <br/><img src="/images/airbnb.png">
     </a>
   </div>
   <div class="project-item">
