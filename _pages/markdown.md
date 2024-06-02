@@ -1,6 +1,6 @@
 ---
 permalink: /markdown/
-title: "GitHub"
+title: "My Github stats"
 author_profile: true
 redirect_from: 
   - /md/
