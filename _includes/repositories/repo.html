@@ -1,8 +1,13 @@
 <div class="repository">
-    <h3><a href="{{ repository.url }}">{{ repository.name }}</a> <span class="label">Public</span></h3>
-    <p>{{ repository.description }}</p>
-    <p><img align="center" src="https://img.shields.io/badge/{{ repository.type | replace: " ", "%20" }}-orange" alt="{{ repository.type }}" /></p>
-    {% if repository.stars > 0 %}
-    <p><img align="center" src="https://img.shields.io/github/stars/{{ repository.url | split: '/' | last }}" alt="Stars" /> {{ repository.stars }} stars</p>
+    <h3>
+      <a href="{{ repo.html_url }}">{{ repo.name }}</a>
+      <span class="label">Public</span>
+    </h3>
+    <p>{{ repo.description }}</p>
+    {% if repo.language %}
+      <p><img align="center" src="https://img.shields.io/badge/{{ repo.language }}-orange" alt="{{ repo.language }}" /></p>
+    {% endif %}
+    {% if repo.stargazers_count > 0 %}
+      <p><img align="center" src="https://img.shields.io/github/stars/{{ repo.owner.login }}/{{ repo.name }}" alt="Stars" /> {{ repo.stargazers_count }} stars</p>
     {% endif %}
   </div>

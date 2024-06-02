@@ -15,7 +15,6 @@ redirect_from:
 
 ## Repositories
 
-## Repositories
 
 <div id="repositories"></div>
 
