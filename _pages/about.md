@@ -16,6 +16,6 @@ I'm a Data Scientist, currently working at Grant Thornton Greece, contributing o
 
 I have completed my Bachelor's degree in the Department of Management Science & Technology at [AUEB](https://www.aueb.gr/), with major in Software Engineering and Data Science. My thesis explored the Advancements in Natural Language Processing. 
 
-Also, I am a research assistant at the University of Sheffield, analyzing hundreds of documents from Greek and foreign press on Greek tourism, using topic modeling techniques to derive insights.
+Also, I am a research assistant at the University of Sheffield, analyzing thousands of documents from Greek and foreign press on Greek tourism, using sentiment analysis and topic modeling techniques to derive insights.
 
 I continuously seek to expand my knowledge, currently learning Keras & Tensorflow.
