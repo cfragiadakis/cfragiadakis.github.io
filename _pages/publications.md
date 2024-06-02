@@ -19,21 +19,30 @@ author_profile: true
   }
 
   .project-item img {
-    width: 300px; 
+    width: 350px; 
     height: 200px; 
     object-fit: cover; 
   }
 
   h2 {
-    color: blue; 
+    color: #007bff; 
   }
 
   h2:hover {
-    color: blue; 
+    color: #007bff; 
   }
 
   p:hover {
-    color: blue;
+    color: #007bff; 
+  }
+
+  a {
+    color: inherit; 
+    text-decoration: none; 
+  }
+
+  a:hover {
+    color: #007bff; 
   }
 
   @media screen and (max-width: 768px) {
@@ -45,7 +54,6 @@ author_profile: true
 
 
 <h2>Machine Learning</h2>
-<br>
 <div class="project-row">
   <div class="project-item">
   <a href = 'https://github.com/cfragiadakis/Roget-Thesaurus-Classification'>
@@ -58,7 +66,6 @@ author_profile: true
 </div>
 
 <h2>Statistics</h2>
-<br>
 <div class="project-row">
   <div class="project-item">
   <a href = 'https://github.com/cfragiadakis/Roget-Thesaurus-Classification'>
@@ -72,7 +79,6 @@ author_profile: true
 
 
 <h2>Exploratory Data Analysis</h2>
-<br>
 <div class="project-row">
   <div class="project-item">
     <a href = 'https://github.com/cfragiadakis/Roget-Thesaurus-Classification'>
