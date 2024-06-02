@@ -15,40 +15,48 @@ redirect_from:
 
 ## Repositories
 
-
-<!-- <div id="repositories"></div>
-
-<script>
-  const repos = {{ site.data.repositories.github_repositories | jsonify }};
-  const repoContainer = document.getElementById('repositories');
-
-  repos.forEach(repo => {
-    const apiUrl = `https://api.github.com/repos/${repo.owner}/${repo.name}`;
-    
-    fetch(apiUrl)
-      .then(response => response.json())
-      .then(data => {
-        const repoElement = document.createElement('div');
-        repoElement.classList.add('repository');
-        repoElement.innerHTML = `
-          <h3><a href="${data.html_url}">${data.name}</a> <span class="label">Public</span></h3>
-          <p>${data.description}</p>
-          <p><img align="center" src="https://img.shields.io/badge/${data.language || 'Unknown'}-orange" alt="${data.language || 'Unknown'}" /></p>
-          ${data.stargazers_count > 0 ? `<p><img align="center" src="https://img.shields.io/github/stars/${repo.owner}/${repo.name}" alt="Stars" /> ${data.stargazers_count} stars</p>` : ''}
-        `;
-        repoContainer.appendChild(repoElement);
-      })
-      .catch(error => {
-        console.error('Error fetching repository data:', error);
-      });
-  });
-</script> -->
-
 {% if site.data.repositories.github_repositories %}
   {% for repo in site.data.repositories.github_repositories %}
     {% include repo.html repository=repo %}
   {% endfor %}
 {% endif %}
+
+<div id="repositories"></div>
+
+<script>
+  const repoList = [
+    'cfragiadakis/Roget-Thesaurus-Classification',
+    'cfragiadakis/Exploring-AirBnB-in-Athens',
+    'cfragiadakis/Exploring-Why-Civil-Resistance-Works',
+    'cfragiadakis/Crime-Analysis-in-Chicago'
+  ];
+
+  const repoContainer = document.getElementById('repositories');
+
+  repoList.forEach(repo => {
+    const apiUrl = `https://api.github.com/repos/${repo}`;
+
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const repoHtml = `
+          <div class="repository">
+            <h3>
+              <a href="${data.html_url}">${data.name}</a>
+              <span class="label">Public</span>
+            </h3>
+            <p>${data.description}</p>
+            ${data.language ? `<p><img align="center" src="https://img.shields.io/badge/${data.language.replace(" ", "%20")}-orange" alt="${data.language}" /></p>` : ''}
+            ${data.stargazers_count > 0 ? `<p><img align="center" src="https://img.shields.io/github/stars/${data.full_name}" alt="Stars" /> ${data.stargazers_count} stars</p>` : ''}
+          </div>
+        `;
+        repoContainer.innerHTML += repoHtml;
+      })
+      .catch(error => {
+        console.error('Error fetching repository data:', error);
+      });
+  });
+</script>
 
 ## Locations of key files/directories
 
