@@ -20,7 +20,7 @@ author_profile: true
   }
 
   .project-item img {
-    width: 400px; 
+    width: 420px; 
     height: 200px; 
     object-fit: cover; 
   }
