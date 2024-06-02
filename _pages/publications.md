@@ -19,7 +19,7 @@ author_profile: true
   }
 
   .project-item img {
-    width: 350px; 
+    width: 400px; 
     height: 200px; 
     object-fit: cover; 
   }
@@ -56,8 +56,10 @@ author_profile: true
 <h2>Machine Learning</h2>
 <div class="project-row">
   <div class="project-item">
+
+  Analysis of Roget's Thesaurus lexicon, using web scraping and machine learning techniques <br/>
   <a href = 'https://github.com/cfragiadakis/Roget-Thesaurus-Classification'>
-    Analysis of Roget's Thesaurus lexicon, using web scraping and machine learning techniques <br/><img src="/images/lexicon.jpg">
+      <img src="/images/lexicon.jpg">
   </a>
   </div>
   <div class="project-item">
@@ -68,8 +70,9 @@ author_profile: true
 <h2>Statistics</h2>
 <div class="project-row">
   <div class="project-item">
-  <a href = 'https://github.com/cfragiadakis/Roget-Thesaurus-Classification'>
-    Statistical analysis on the impact of various factors on success rates of a campaign <br/><img src="/images/lr_regression.JPG">
+  Statistical analysis on the impact of various factors on success rates of a campaign 
+  <a href = 'https://github.com/cfragiadakis/Exploring-Why-Civil-Resistance-Works'>
+    <br/><img src="/images/lr_regression.JPG">
   </a>
   </div>
   <div class="project-item">
@@ -81,13 +84,15 @@ author_profile: true
 <h2>Exploratory Data Analysis</h2>
 <div class="project-row">
   <div class="project-item">
-    <a href = 'https://github.com/cfragiadakis/Roget-Thesaurus-Classification'>
-    Analysis of Athens AirBnB data <br/><img src="/images/airbnb.jpg">
+    Analysis of Athens AirBnB data 
+    <a href = 'https://github.com/cfragiadakis/Exploring-AirBnB-in-Athens'>
+    <br/><img src="/images/airbnb.jpg">
     </a>
   </div>
   <div class="project-item">
-    <a href = 'https://github.com/cfragiadakis/Roget-Thesaurus-Classification'>
-    Exploratory Data Analysis in Chicago crimes data <br/><img src="/images/crime_data.jpg">
+  Exploratory Data Analysis in Chicago crimes data 
+    <a href = 'https://github.com/cfragiadakis/Crime-Analysis-in-Chicago'>
+    <br/><img src="/images/crime_data.jpg">
     </a>
   </div>
 </div>
