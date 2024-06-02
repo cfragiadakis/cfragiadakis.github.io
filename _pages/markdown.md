@@ -1,6 +1,6 @@
 ---
 permalink: /markdown/
-title: "Markdown"
+title: "GitHub"
 author_profile: true
 redirect_from: 
   - /md/
@@ -11,6 +11,30 @@ redirect_from:
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=cfragiadakis&" alt="cfragiadakis" /></p>
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=cfragiadakis&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
+
+## Repositories
+
+<div id="repos"></div>
+
+<script>
+  async function fetchRepos() {
+    const username = 'cfragiadakis';
+    const response = await fetch(`https://api.github.com/users/${username}/repos`);
+    const repos = await response.json();
+    const reposContainer = document.getElementById('repos');
+    reposContainer.innerHTML = repos.map(repo => `
+      <div style="margin-bottom: 10px;">
+        <a href="${repo.html_url}" target="_blank"><strong>${repo.name}</strong></a>
+        <p>${repo.description || 'No description'}</p>
+        <p>⭐ ${repo.stargazers_count} | Forks: ${repo.forks_count}</p>
+      </div>
+    `).join('');
+  }
+
+  fetchRepos();
+</script>
+
 
 
 ## Locations of key files/directories
