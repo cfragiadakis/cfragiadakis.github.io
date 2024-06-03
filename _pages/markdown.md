@@ -14,9 +14,9 @@ redirect_from:
 
 
 ## Repositories
-
-{% if site.data.repositories.github_repositories %}
+{% include repo.html repository=repo %}
+<!-- {% if site.data.repositories.github_repositories %}
   {% for repo in site.data.repositories.github_repositories %}
-    {% include repo.html repository=repo %}
+    
   {% endfor %}
-{% endif %}
+{% endif %} -->
