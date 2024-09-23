@@ -12,7 +12,7 @@ redirect_from:
 A data-driven personal website
 ====== -->
 
-I'm a Data Scientist, currently working at Grant Thornton Greece, contributing on projects that have involved Exploratory Data Analysis, Natural Language Processing, Machine Learning models and the application of Large Language Models. 
+I'm a Data Scientist, currently working at EY, contributing on projects that have involved Exploratory Data Analysis, Natural Language Processing, Machine Learning models and the application of Large Language Models. 
 
 I have completed my Bachelor's degree in the Department of Management Science & Technology at [AUEB](https://www.aueb.gr/), with major in Software Engineering and Data Science. My thesis explored the Advancements in Natural Language Processing. 
 
