@@ -53,47 +53,94 @@ author_profile: true
   }
 </style>
 
-
-<h2>Machine Learning</h2>
+<h2>Deep Learning & Computer Vision</h2>
 <div class="project-row">
-  <div class="project-item">
 
-  Analysis of Roget's Thesaurus lexicon, using web scraping, word embeddings and machine learning techniques <br/>
-  <a href = 'https://github.com/cfragiadakis/Roget-Thesaurus-Classification'>
-      <img src="/images/lexicon.jpg">
-  </a>
-  </div>
   <div class="project-item">
-    <!-- for second ml project -->
+    Fairness-aware multimodal Transformer for real-time student attention estimation using image and sensor data
+    <a href="https://github.com/cfragiadakis/Thesis">
+      <br/><img src="/images/student.png">
+    </a>
   </div>
-</div>
 
-<h2>Statistics</h2>
-<div class="project-row">
   <div class="project-item">
-  Statistical analysis on the impact of various factors on success rates of a campaign 
-  <a href = 'https://github.com/cfragiadakis/Exploring-Why-Civil-Resistance-Works'>
-    <br/><img src="/images/logistic_regression.JPG">
-  </a>
+    Bird species classification using deep learning and computer vision techniques
+    <a href="https://github.com/cfragiadakis/AML-2025-Feathers-in-focus">
+      <br/><img src="/images/birdsclass.png">
+    </a>
   </div>
-  <div class="project-item">
-    <!-- for second statistics project -->
-  </div>
+
 </div>
 
 
-<h2>Exploratory Data Analysis</h2>
+<h2>Natural Language Processing</h2>
 <div class="project-row">
+
   <div class="project-item">
-    Analysis of Athens AirBnB data 
-    <a href = 'https://github.com/cfragiadakis/Exploring-AirBnB-in-Athens'>
-    <br/><img src="/images/airbnb.png">
+    Retrieval-Augmented Generation chatbot for exploring Rijksmuseum artworks and collections
+    <a href="https://github.com/cfragiadakis/Chatbot-for-the-Rijksmuseum">
+      <br/><img src="/images/chatbot.png">
     </a>
   </div>
+
   <div class="project-item">
-  Exploratory Data Analysis in Chicago crimes data 
-    <a href = 'https://github.com/cfragiadakis/Crime-Analysis-in-Chicago'>
-    <br/><img src="/images/crime_data.jpg">
+    Analysis of Roget's Thesaurus lexicon using web scraping, word embeddings and machine learning
+    <a href="https://github.com/cfragiadakis/Roget-Thesaurus-Classification">
+      <br/><img src="/images/lexicon.jpg">
     </a>
   </div>
+
+  <div class="project-item">
+    Analysis of UN speeches and voting patterns using Natural Language Processing techniques
+    <a href="https://github.com/cfragiadakis/UN-Palestine-Rhetoric-and-Voting">
+      <br/><img src="/images/un.png">
+    </a>
+  </div>
+
+</div>
+
+
+<h2>Data Analysis & Machine Learning</h2>
+<div class="project-row">
+
+  <div class="project-item">
+    Analysis of Athens Airbnb listings to uncover pricing patterns and location trends
+    <a href="https://github.com/cfragiadakis/Exploring-AirBnB-in-Athens">
+      <br/><img src="/images/airbnb.png">
+    </a>
+  </div>
+
+  <div class="project-item">
+    Chicago crime analysis with exploratory data analysis and Random Forest classification
+    <a href="https://github.com/cfragiadakis/Crime-Analysis-in-Chicago">
+      <br/><img src="/images/crime_data.jpg">
+    </a>
+  </div>
+
+</div>
+
+
+<h2>Network Science</h2>
+<div class="project-row">
+
+  <div class="project-item">
+    Link prediction in complex networks with analysis of ethical implications
+    <a href="https://github.com/cfragiadakis/Link-Prediction-and-Ethical-Implications">
+      <br/><img src="/images/link-prediction.png">
+    </a>
+  </div>
+
+</div>
+
+
+<h2>Statistical Modeling</h2>
+<div class="project-row">
+
+  <div class="project-item">
+    Statistical analysis of factors influencing civil resistance success using regression modeling
+    <a href="https://github.com/cfragiadakis/Exploring-Why-Civil-Resistance-Works">
+      <br/><img src="/images/logistic_regression.JPG">
+    </a>
+  </div>
+
 </div>
