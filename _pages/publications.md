@@ -111,7 +111,7 @@ author_profile: true
   </div>
 
   <div class="project-item">
-    Chicago crime analysis with exploratory data analysis and Random Forest classification
+    Chicago crime analysis with exploratory data analysis and classification algorithms
     <a href="https://github.com/cfragiadakis/Crime-Analysis-in-Chicago">
       <br/><img src="/images/crime_data.jpg">
     </a>
