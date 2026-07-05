@@ -72,16 +72,20 @@ author_profile: true
 
 </div>
 
-
-<h2>Natural Language Processing</h2>
-<div class="project-row">
-
+<h2>RAG</h2>
+  <div class="project-row">
   <div class="project-item">
     Retrieval-Augmented Generation chatbot for exploring Rijksmuseum artworks and collections
     <a href="https://github.com/cfragiadakis/Chatbot-for-the-Rijksmuseum">
       <br/><img src="/images/chatbot.png">
     </a>
   </div>
+
+</div>
+
+
+<h2>Natural Language Processing</h2>
+<div class="project-row">
 
   <div class="project-item">
     Analysis of Roget's Thesaurus lexicon using web scraping, word embeddings and machine learning
