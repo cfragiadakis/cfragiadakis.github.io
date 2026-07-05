@@ -91,7 +91,7 @@ author_profile: true
   </div>
 
   <div class="project-item">
-    Analysis of UN speeches and voting patterns using Natural Language Processing techniques
+    Analysis of UN speeches and voting patterns using Natural Language Processing
     <a href="https://github.com/cfragiadakis/UN-Palestine-Rhetoric-and-Voting">
       <br/><img src="/images/un.png">
     </a>
